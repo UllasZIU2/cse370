@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sell</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+  <script src="js/script.js"></script>
+
+  <div class="sell-page">
+    <div class="form-container">
+      <h2>Sell or Donate Pet Food</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">User Name:</label>
+          <input type="text" id="username" name="username" required />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone No:</label>
+          <input type="tel" id="phone" name="phone" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="foodname">Food Name:</label>
+          <input type="text" id="foodname" name="foodname" required />
+        </div>
+
+        <div class="form-group">
+          <label for="type">Cat/Dog Food:</label>
+          <select id="type" name="type">
+            <option value="cat">Cat</option>
+            <option value="dog">Dog</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="dates">Production & Expiry Date:</label>
+          <input type="text" id="dates" name="dates" placeholder="e.g. Jan 2024 - Dec 2025" required />
+        </div>
+
+        <div class="form-group">
+          <label for="intake">Intake/Open Status:</label>
+          <select id="intake" name="intake">
+            <option value="sealed">Sealed</option>
+            <option value="opened">Opened</option>
+          </select>
+        </div>
+
+        
+
+        <div class="form-group">
+    <label for="action">Sell or Donate:</label>
+    <select id="action" name="action" onchange="togglePriceField()">
+      <option value="sell">Sell</option>
+      <option value="donate">Donate</option>
+    </select>
+  </div>
+
+  <!-- 💰 Dynamic Price Field -->
+  <div class="form-group" id="price-group">
+    <label for="price">Price:</label>
+    <input type="text" id="price" name="price" placeholder="Enter amount in BDT" />
+  </div>
+
+  <div class="form-group">
+    <label for="note">Additional Notes (Optional):</label>
+    <textarea id="note" name="note" rows="3" placeholder="Anything important..."></textarea>
+  </div>
+
+  <button id="sell-submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+
+    
+</body>
+</html>
+
+
+
